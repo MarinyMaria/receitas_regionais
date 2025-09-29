@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
+}
+header {
+  background: #ff7043;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+nav button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background: #fff;
+  color: #ff7043;
+  cursor: pointer;
+  border-radius: 5px;
+}
+main {
+  padding: 20px;
+}
+form input, form textarea, form button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.receita {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.hidden { display: none; }
+button.editar, button.excluir {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
