@@ -1,10 +1,10 @@
-// --- Elementos ---
+
 const secUsuarios = document.getElementById("secUsuarios");
 const secReceitas = document.getElementById("secReceitas");
 const btnUsuarios = document.getElementById("btnUsuarios");
 const btnReceitas = document.getElementById("btnReceitas");
 
-// --- Navegação ---
+
 btnUsuarios.addEventListener("click", () => mostrarSecao("usuarios"));
 btnReceitas.addEventListener("click", () => mostrarSecao("receitas"));
 
@@ -13,7 +13,7 @@ function mostrarSecao(sec) {
   secReceitas.classList.toggle("hidden", sec !== "receitas");
 }
 
-// --- Usuários ---
+
 const formUsuario = document.getElementById("formUsuario");
 const listaUsuarios = document.getElementById("listaUsuarios");
 let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
@@ -39,7 +39,6 @@ formUsuario.addEventListener("submit", e => {
 });
 atualizarUsuarios();
 
-// --- Receitas ---
 const formReceita = document.getElementById("formReceita");
 const listaReceitas = document.getElementById("listaReceitas");
 let receitas = JSON.parse(localStorage.getItem("receitas")) || [];
@@ -83,7 +82,7 @@ formReceita.addEventListener("submit", e => {
   atualizarReceitas();
 });
 
-// Editar / Excluir
+
 listaReceitas.addEventListener("click", e => {
   const id = e.target.dataset.id;
   if (e.target.classList.contains("editar")) {
